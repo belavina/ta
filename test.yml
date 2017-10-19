@@ -1,0 +1,5 @@
+- name: Hello There
+  hosts: all
+  tasks:
+    - name: Get EthInterfaces
+      setup: "filter=ansible_eth[0-2]"
