@@ -1,0 +1,9 @@
+- name: Copy
+  hosts: backup
+  tasks:
+    - name: Transfer Backup
+      synchronize: 
+        src: /home/vagrant/zapp_db.tar 
+        dest: /home/vagrant/temp
+      mode : pull
+      remote_user: vagrant

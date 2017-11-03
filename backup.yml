@@ -3,7 +3,6 @@
   tasks:
     - name: Archive image
       docker_image:
-        name: 'zapp_db'
+        name: 'z3_db'
         path: 'Z3'
-        tag: a-v1
-        archive_path: zapp_db.tar
+        archive_path: Bla-Bla-ZAPP-Backup.tar
