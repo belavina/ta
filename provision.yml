@@ -1,0 +1,7 @@
+- name: Test containers
+  hosts: web
+  tasks:
+    - name: Build All the containers
+      docker_service:
+        project_src: Z3
+        build: yes

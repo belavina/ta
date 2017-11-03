@@ -1,5 +1,5 @@
-- name: Ping em all!!
+- name: Verify that Remote Server is up
   hosts: all
   tasks:
-    - name: Check if ma boys are up
+    - name: Ping the remote
       ping:

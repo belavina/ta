@@ -1,0 +1,9 @@
+- name: Test Backup Functionality
+  hosts: web
+  tasks:
+    - name: Archive image
+      docker_image:
+        name: 'zapp_db'
+        path: 'Z3'
+        tag: a-v1
+        archive_path: zapp_db.tar
