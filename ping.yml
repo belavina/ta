@@ -1,4 +1,5 @@
 - name: Verify that Remote Server is up
+  gather_facts: false
   hosts: all
   tasks:
     - name: Ping the remote

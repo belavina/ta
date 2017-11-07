@@ -1,4 +1,5 @@
 - name: Test containers
+  gather_facts: false
   hosts: web
   tasks:
     - name: Build All the containers
